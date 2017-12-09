@@ -26,4 +26,9 @@ Route::post('/clients','ClientsController@store');
 
 Auth::routes();
 
+//if you
+//Route::get('login',function (){
+//    return 'my login page';
+//});
+
 Route::get('/home', 'HomeController@index')->name('home');
