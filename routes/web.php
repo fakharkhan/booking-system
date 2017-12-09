@@ -23,3 +23,7 @@ Route::get('/clients','ClientsController@index')->name('clients');
 Route::post('/clients','ClientsController@store');
 
 
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
