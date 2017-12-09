@@ -15,7 +15,11 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/download','ClientsController@download')->name('download');
+
 Route::get('/clients/create','ClientsController@create');
 Route::get('/clients/{id}','ClientsController@show');
-Route::get('/clients','ClientsController@index');
+Route::get('/clients','ClientsController@index')->name('clients');
 Route::post('/clients','ClientsController@store');
+
+

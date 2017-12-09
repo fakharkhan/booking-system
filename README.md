@@ -3,6 +3,35 @@ Booking System aimed to use as a Practice Assignment for Laravel Training Sessio
 
 
 #Week 2 Notes
-        //return redirect()->route('clients'); //redirect to route name
-        //return redirect()->to('/clients'); // redirects to url
-        //return response()->json($client); // returns json response
+return redirect()->route('clients'); //redirect to route name
+return redirect()->to('/clients'); // redirects to url
+return response()->json($client); // returns json response
+return response()->download('robots.txt'); // return files to download in browser
+
+
+### Collections
+      $collection = collect([
+            ['product' => 'Desk', 'price' => 200],
+            ['product' => 'Chair', 'price' => 100],
+            ['product' => 'Bookcase', 'price' => 150],
+            ['product' => 'Door', 'price' => 100],
+        ]);
+
+        $filtered = $collection->where('price', 100);
+
+        $filtered->all();
+
+        return $filtered;
+        
+###Custom Helpers
+https://laravel-news.com/creating-helpers
+
+
+###Eloquent
+1. Eloquent Class  (collection:all(), Query Builder: where(),Eloquent Class Object: first())
+2. Query Builder (Active Record Implementation)
+3. Database
+
+###Builders
+1. https://laravel.com/api/5.5/Illuminate/Database/Eloquent/Builder.html
+2. https://laravel.com/api/5.5/Illuminate/Database/Query/Builder.html
