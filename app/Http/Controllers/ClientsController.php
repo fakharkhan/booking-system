@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Client;
+use App\Http\Requests\ClientFormRequest;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
@@ -67,14 +68,8 @@ class ClientsController extends Controller
         return view('clients.create');
     }
 
-    public function store(Request $request)
+    public function store(ClientFormRequest $request)
     {
-        $rules = [
-            'name' => 'required',
-            'phone' => 'required',
-        ];
-
-        $request->validate($rules);
 
         Client::create(request()->all());
 

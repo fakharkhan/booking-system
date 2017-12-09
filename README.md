@@ -35,3 +35,12 @@ https://laravel-news.com/creating-helpers
 ###Builders
 1. https://laravel.com/api/5.5/Illuminate/Database/Eloquent/Builder.html
 2. https://laravel.com/api/5.5/Illuminate/Database/Query/Builder.html
+
+##Validation
+###Inline Validation
+//        $rules = [
+//            'name' => 'required',
+//            'phone' => 'required',
+//        ];
+//
+//        $request->validate($rules);
