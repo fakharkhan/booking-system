@@ -67,8 +67,14 @@ class ClientsController extends Controller
         return view('clients.create');
     }
 
-    public function store()
+    public function store(Request $request)
     {
+        $rules = [
+            'name' => 'required',
+            'phone' => 'required',
+        ];
+
+        $request->validate($rules);
 
         Client::create(request()->all());
 

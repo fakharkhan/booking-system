@@ -50,11 +50,8 @@ class LoginController extends Controller
      */
     public function username()
     {
-        return 'name';
+        return 'email';
     }
 
-    protected function credentials(Request $request)
-    {
-        return $request->only($this->username(), 'password');
-    }
+
 }
