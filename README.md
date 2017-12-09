@@ -44,3 +44,11 @@ https://laravel-news.com/creating-helpers
 //        ];
 //
 //        $request->validate($rules);
+
+
+#ACL 
+## Tables
+1. Permissions
+2. Roles
+3. Permission_Role
+4. Role_User
