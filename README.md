@@ -52,3 +52,27 @@ https://laravel-news.com/creating-helpers
 2. Roles
 3. Permission_Role
 4. Role_User
+
+#Service Container and Depnedency Injection
+    //$app = new Illuminate\Container\Container();
+
+    //$arepo = new \App\Browns\Repositories\AirportRepository($app);
+
+    //$aservice = new App\Browns\Services\AirportService($arepo);
+
+    //dd($aservice->myName(),app('App\Browns\Services\AirportService')->myName());
+
+    //dd((new \Illuminate\Container\Container())->make('App\Browns\Services\AirportService'));
+
+    //dd(\Illuminate\Container\Container::getInstance()->make('App\Browns\Services\AirportService'));
+
+    /*
+
+        return Container::getInstance()->make($make, $parameters);
+    */
+    //dd(new \Illuminate\Container\Container()->make('App\Browns\Services\AirportService'))
+    
+#Providing parameter to Service Container:
+  // $user = \App\Browns\Models\User::latest()->first();
+  //  dd(app('App\Browns\Services\AirportService',['user'=>$user])->myName());
+    

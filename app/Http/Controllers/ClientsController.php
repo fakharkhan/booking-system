@@ -4,11 +4,17 @@ namespace App\Http\Controllers;
 
 use App\Client;
 use App\Http\Requests\ClientFormRequest;
+use App\Services\ClientService;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
 class ClientsController extends Controller
 {
+    protected $service;
+    public function __construct(ClientService $service)
+    {
+        $this->service = $service;
+    }
     public function index()
     {
 
@@ -30,7 +36,7 @@ class ClientsController extends Controller
 
         //$clients->fromQuery('');
 
-        $clients=Client::all(); //Return Collection
+        $clients=$this->service->all(); //Return Collection
 
 //        $clients->where('name','Fakhar Khan')[0]->name='Akber Ali'; //find a record
 
