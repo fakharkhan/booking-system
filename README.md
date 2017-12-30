@@ -75,4 +75,9 @@ https://laravel-news.com/creating-helpers
 #Providing parameter to Service Container:
   // $user = \App\Browns\Models\User::latest()->first();
   //  dd(app('App\Browns\Services\AirportService',['user'=>$user])->myName());
-    
+  
+#https://medium.com/@NahidulHasan/laravel-ioc-container-why-we-need-it-and-how-it-works-a603d4cef10f    
+
+
+#Blade Directives:
+https://laravelcollective.com/
