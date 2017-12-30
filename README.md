@@ -81,3 +81,9 @@ https://laravel-news.com/creating-helpers
 
 #Blade Directives:
 https://laravelcollective.com/
+
+#Multilayer Architecture
+1.Model 
+   2.Repositories -Extends Base Repository ( Maintain Data layer)
+   3.Services - Extends Base Services (Maintains Business Logic)
+4.Controller 

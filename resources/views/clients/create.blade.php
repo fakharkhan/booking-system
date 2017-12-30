@@ -29,13 +29,12 @@
             {{--<input type="text" class="form-control"  name="{{ isset($name) ? $name : '' }}" >--}}
             {{--</div>--}}
 
-            
-            @include('controls.text',['name'=>'name','label'=>'Client Name','placeholder'=>'Enter client name'])
 
+            {{--@include('controls.text',['name'=>'name','label'=>'Client Name','placeholder'=>'Enter client name'])--}}
+            {{--@include('controls.text',['name'=>'phone','label'=>'Client Phone'])--}}
 
-
-            @include('controls.text',['name'=>'phone','label'=>'Client Phone'])
-
+            @text('name')
+            @text('phone')
 
 
             <input type="submit" value="Save">

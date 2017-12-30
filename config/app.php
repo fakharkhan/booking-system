@@ -178,6 +178,9 @@ return [
         App\Providers\RouteServiceProvider::class,
 
         PrettyRoutes\ServiceProvider::class,
+
+        /*Custom Service Providers*/
+        App\Providers\BladeServiceProvider::class,
     ],
 
     /*
