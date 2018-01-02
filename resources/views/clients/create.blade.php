@@ -33,8 +33,8 @@
             {{--@include('controls.text',['name'=>'name','label'=>'Client Name','placeholder'=>'Enter client name'])--}}
             {{--@include('controls.text',['name'=>'phone','label'=>'Client Phone'])--}}
 
-            @text('name')
-            @text('phone')
+            @text('name'=>'name','options'=>['label'=>'Client Name','placeholder'=>'Enter full name'])
+            @text('name'=>'phone','options'=>['label'=>'Client Phone','placeholder'=>'Enter mobile number'])
 
 
             <input type="submit" value="Save">

@@ -1,7 +1,4 @@
-
-
-
 <div class="form-group">
-    <label for="exampleInputEmail1">Email address</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+    <label for="fc-{{ $name }}">{{ isset($options['label']) ? $options['label'] : $name }}</label>
+    <input  type="text" class="form-control" name="{{ $name }}" id="fc-{{ $name }}" placeholder="{{ isset($options['placeholder']) ? $options['placeholder'] : $name }}">
 </div>

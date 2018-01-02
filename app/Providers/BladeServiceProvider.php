@@ -33,6 +33,7 @@ class BladeServiceProvider extends ServiceProvider
                 $expression = [];
             }
 
+
             $view ='controls.text';
 
             return "<?php echo \$__env->make('{$view}',[$expression], array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>";
